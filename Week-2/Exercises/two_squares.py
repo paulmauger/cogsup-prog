@@ -26,12 +26,15 @@ square_green.present(clear=False, update=True)
 
 while square_red.position[0] - square_green.position[0] < 50: 
     square_red.move((step_size, 0)) #movex, movey 
+    square_red.present(clear=True, update=False)
+    square_green.present(clear=False, update=True)
 
 
 while square_green.position[0] < displacement_X: 
     square_green.move((step_size, 0)) #movex, movey 
-
-
+    square_red.present(clear=True, update=False)
+    square_green.present(clear=False, update=True)
+    
 # Leave it on-screen until a key is pressed
 exp.keyboard.wait()
 
