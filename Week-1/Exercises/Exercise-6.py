@@ -4,12 +4,23 @@ Write a script that lists all the prime numbers between 1 and 10000.
 Hint: Write an is_factor helper function.
 """
 
-def is_factor(d, n):
-    """True iff (if and only if) d is a divisor of n."""
-    pass
+from math import isqrt
 
-def is_prime(n):
-    pass
+#Implentation of the Sieve of Eratosthenes
+def crible(n):
+    
+    n+=1 #because otherwise range(n) doesn't reach n
+    
+    list_primes = [True for _ in range(0, n)]
+    list_primes[0] = False
+    list_primes[1] = False 
 
-list_of_primes = []
-print(list_of_primes)
+    limit = isqrt(n)
+    for idNum in range(2, limit):
+        for j in range(idNum*idNum, n, idNum):
+            list_primes[j] = False
+    
+    return [i for i, b in enumerate(list_primes) if b]
+
+
+print(crible(10000))

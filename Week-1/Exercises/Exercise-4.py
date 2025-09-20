@@ -18,7 +18,7 @@ dct = {'a': 3, 'b': 7, 'c': -2, 'd': 10, 'e': 5}
 
 print("Exercise 4.1")
 
-pass
+print(sum(dct.values()))
 
 print("---")
 
@@ -32,7 +32,9 @@ Print the key that has the largest value in dct.
 
 print("Exercise 4.2")
 
-pass
+print(max(dct, key=lambda x: dct[x])) #O(n)
+#print([k for (k,v) in dct.items() if all([v >= i for i in dct.values()])][0]) #O(n^2)
+#print([k for (k,v) in dct.items() if v == max(dct.values())]) #O(n^2)
 
 print("---")
 
@@ -44,9 +46,14 @@ Task:
 Create a new dictionary with the squares of all the values in dct.
 """
 
+
+
 print("Exercise 4.3")
 
-pass
+dct_square = { k : v**2 
+              for (k,v) in dct.items()}
+
+print(dct_square)
 
 print("---")
 
@@ -60,7 +67,7 @@ Print only the keys in dct whose values are even numbers.
 
 print("Exercise 4.4")
 
-pass
+print(list(filter(lambda x: dct[x] % 2 == 0, dct)))
 
 print("---")
 
@@ -74,7 +81,8 @@ Create a new dictionary that swaps the keys and values in dct.
 
 print("Exercise 4.5")
 
-pass
+dct_swap = {v:k for (k,v) in dct.items()}
+print(dct_swap)
 
 print("---")
 
@@ -91,7 +99,10 @@ s = 'ccctcctttttcc'
 
 print("Exercise 4.6")
 
-pass
+dct_s = {}
+for c in s:
+    dct_s[c] = dct_s.get(c, 0) + 1
+print(dct_s)
 
 print("---")
 
@@ -108,9 +119,11 @@ print the list of corresponding words.
 responses_mapping = {'j':'jazz','p':'pop'}
 responses = 'jjjpjjpppppjj'
 
+
 print("Exercise 4.7")
 
-pass
+list_res = [responses_mapping[c] for c in responses]
+print(list_res)
 
 print("---")
 
@@ -125,7 +138,9 @@ Merge the following two dictionaries into one:
 
 print("Exercise 4.8")
 
-pass
+d1, d2 = {'a': 1, 'b': 2}, {'c': 3, 'd': 4}
+print(d1 | d2)
+
 
 print("---")
 
@@ -140,8 +155,11 @@ create a new one whose keys are sorted alphabetically.
 
 print("Exercise 4.9")
 
-pass
+d_animals = {'zebra': 10, 'dolphin': 25, 'alligator': 3, 'monkey': 5, 'pig': 9}
 
+d_sorted = dict(sorted(d_animals.items()))
+
+print(d_sorted)
 print("---")
 
 """
@@ -155,6 +173,6 @@ create a new one whose values appear in increasing order.
 
 print("Exercise 4.10")
 
-pass
+print(dict(sorted(d_animals.items(), key=lambda x : x[1])))
 
 print("---")

@@ -25,7 +25,8 @@ def print_triangle_o(rows):
     """
     Print a centered triangle made of the letter 'o'.
     """
-    pass
+    for i in range(rows):
+        print(' '*(rows-i-1) + 'o'*(2*i+1) + ' '* (rows-i-1))
 
 sprint("---")
 
@@ -42,7 +43,10 @@ sprint("Exercise 5.2")
 
 def prod_list_easy(lst):
     """Returns the product of the elements in a number list iteratively."""
-    pass
+    product=1
+    for i in lst:
+        product*=i
+    return product
 
 sprint("---")
 
@@ -63,7 +67,11 @@ sprint("Exercise 5.3")
 
 def prod_list_rec(lst):
     """Returns the product of the elements in a number list recursively."""
-    pass
+    if lst==[]:
+        return 1
+    else: 
+        return prod_list_rec(lst[:-1]) * lst[-1]
+
 
 sprint("---")
 
@@ -80,6 +88,7 @@ Hint: The product of the empty set is 1.
 """
 
 sprint("Exercise 5.4")
+from numbers import Real
 
 def prod_list_rec_full(lst):
     """
@@ -88,7 +97,18 @@ def prod_list_rec_full(lst):
     If the list contains non-numeric elements, a message is printed out
     and the function returns nothing.
     """
-    pass
+    if lst==[]:
+        return 1
+    else: 
+        elem = lst[-1] 
+        if not isinstance(elem, Real):
+            print("Valeur non numérique : return None")
+
+        else:
+            v = prod_list_rec_full(lst[:-1]) 
+            return v * lst[-1] if v != None else None
+
+
     
 sprint("---")
 
@@ -103,16 +123,17 @@ expected outputs. If you solved the exercises correctly, the script will tell yo
 ------
 """
 
-### Run test cases
-# if __name__ == "__main__":
-#     from testcases import (
-#         run_tests_ex51,
-#         run_tests_ex52,
-#         run_tests_ex53,
-#         run_tests_ex54,
-#     )
 
-#     run_tests_ex51()
-#     run_tests_ex52()
-#     run_tests_ex53()
-#     run_tests_ex54()
+### Run test cases
+if __name__ == "__main__":
+    from testcases import (
+        run_tests_ex51,
+        run_tests_ex52,
+        run_tests_ex53,
+        run_tests_ex54,
+    )
+
+    run_tests_ex51()
+    run_tests_ex52()
+    run_tests_ex53()
+    run_tests_ex54()
