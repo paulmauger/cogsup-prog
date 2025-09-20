@@ -1,4 +1,5 @@
 from expyriment import design, control, stimuli
+from expyriment.misc import geometry
 
 control.set_develop_mode()
 
@@ -12,16 +13,17 @@ control.initialize(exp)
 
 # Create a fixation cross (color, size, and position will take on default values)
 # Create a 50px-sized squared
-square_green = stimuli.Rectangle((50, 50), colour=(0, 255, 0), position=(-100, 0))
-square_red = stimuli.Rectangle((50, 50), colour=(255, 0, 0), position=(100, 0))
+triangle = stimuli.Shape(position=(-100, 0), colour=(128,0,128), vertex_list=geometry.vertices_triangle(60., 50., 50.))
+
+hexagon = stimuli.Shape(position=(100, 0), colour=(255, 255, 0), vertex_list=geometry.vertices_regular_polygon(6, 28.87))
 
 
 # Start running the experimen
 control.start(subject_id=1)
 
 # Present the fixation cross and the square
-square_red.present(clear=True, update=False)
-square_green.present(clear=False, update=True)
+hexagon.present(clear=True, update=False)
+triangle.present(clear=False, update=True)
 
 # Leave it on-screen until a key is pressed
 exp.keyboard.wait()

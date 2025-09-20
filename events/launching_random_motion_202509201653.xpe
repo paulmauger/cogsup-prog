@@ -1,0 +1,16 @@
+#Expyriment 1.0.0 (Python 3.11.10), .xpe-file, coding: UTF-8
+#date: Sat Sep 20 2025 16:53:54
+#sha1: 17f04b
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Darwin', node='MacBook-Pro-de-Paul.local', release='24.4.0', version='Darwin Kernel Version 24.4.0: Fri Apr 11 18:32:43 PDT 2025; root:xnu-11417.101.15~117/RELEASE_ARM64_T8103', machine='arm64')
+Time,Type,Event,Value,Detail,Detail2
+932,stderr,received,'Traceback (most recent call last):'
+932,stderr,received,'  File "/Users/paulm/Documents/cogsup/programming/Assignments/Week-2/Exercises/launching_random_motion.py", line 29, in <module>'
+932,stderr,received,'    square_red = stimuli.Rectangle((50, 50), colour=(255, 0, 0), position=new_pos)'
+932,stderr,received,'                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'
+932,stderr,received,'  File "/Users/paulm/Documents/cogsup/programming/Assignments/.venv/lib/python3.11/site-packages/expyriment/stimuli/_rectangle.py", line 47, in __init__'
+933,stderr,received,'    Visual.__init__(self, position=position)'
+933,stderr,received,'  File "/Users/paulm/Documents/cogsup/programming/Assignments/.venv/lib/python3.11/site-packages/expyriment/stimuli/_visual.py", line 236, in __init__'
+933,stderr,received,'    if position:'
+933,stderr,received,'ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()'

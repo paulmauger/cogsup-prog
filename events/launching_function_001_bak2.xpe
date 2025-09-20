@@ -1,0 +1,162 @@
+#Expyriment 1.0.0 (Python 3.11.10), .xpe-file, coding: UTF-8
+#date: Sat Sep 20 2025 16:10:22
+#sha1: a76718
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Darwin', node='MacBook-Pro-de-Paul.local', release='24.4.0', version='Darwin Kernel Version 24.4.0: Fri Apr 11 18:32:43 PDT 2025; root:xnu-11417.101.15~117/RELEASE_ARM64_T8103', machine='arm64')
+Time,Type,Event,Value,Detail,Detail2
+1146,design,log,
+#design: #exp: Square
+#design: block_cnt,block_id,trial_cnt,trial_id
+1146,design,logged,
+1146,Experiment,started
+1146,Stimulus,presented,1
+1151,Stimulus,presented,0
+1152,Stimulus,presented,1
+1168,Stimulus,presented,0
+1169,Stimulus,presented,1
+1185,Stimulus,presented,0
+1185,Stimulus,presented,1
+1201,Stimulus,presented,0
+1202,Stimulus,presented,1
+1218,Stimulus,presented,0
+1218,Stimulus,presented,1
+1235,Stimulus,presented,0
+1235,Stimulus,presented,1
+1251,Stimulus,presented,0
+1252,Stimulus,presented,1
+1268,Stimulus,presented,0
+1269,Stimulus,presented,1
+1285,Stimulus,presented,0
+1285,Stimulus,presented,1
+1301,Stimulus,presented,0
+1302,Stimulus,presented,1
+1318,Stimulus,presented,0
+1319,Stimulus,presented,1
+1335,Stimulus,presented,0
+1336,Stimulus,presented,1
+1352,Stimulus,presented,0
+1352,Stimulus,presented,1
+1369,Stimulus,presented,0
+1370,Stimulus,presented,1
+1386,Stimulus,presented,0
+1387,Stimulus,presented,1
+1402,Stimulus,presented,0
+1403,Stimulus,presented,1
+1419,Stimulus,presented,0
+1421,Stimulus,presented,1
+1436,Stimulus,presented,0
+1437,Stimulus,presented,1
+1453,Stimulus,presented,0
+1454,Stimulus,presented,1
+1469,Stimulus,presented,0
+1470,Stimulus,presented,1
+1486,Stimulus,presented,0
+1487,Stimulus,presented,1
+1503,Stimulus,presented,0
+1505,Stimulus,presented,1
+1519,Stimulus,presented,0
+1521,Stimulus,presented,1
+1536,Stimulus,presented,0
+1537,Stimulus,presented,1
+1552,Stimulus,presented,0
+1553,Stimulus,presented,1
+1569,Stimulus,presented,0
+1570,Stimulus,presented,1
+1586,Stimulus,presented,0
+1587,Stimulus,presented,1
+1602,Stimulus,presented,0
+1603,Stimulus,presented,1
+1619,Stimulus,presented,0
+1620,Stimulus,presented,1
+1636,Stimulus,presented,0
+1637,Stimulus,presented,1
+1652,Stimulus,presented,0
+1654,Stimulus,presented,1
+1669,Stimulus,presented,0
+1670,Stimulus,presented,1
+1686,Stimulus,presented,0
+1688,Stimulus,presented,1
+1702,Stimulus,presented,0
+1704,Stimulus,presented,1
+1719,Stimulus,presented,0
+1721,Stimulus,presented,1
+1735,Stimulus,presented,0
+1737,Stimulus,presented,1
+1752,Stimulus,presented,0
+1753,Stimulus,presented,1
+1769,Stimulus,presented,0
+1771,Stimulus,presented,1
+1786,Stimulus,presented,0
+1787,Stimulus,presented,1
+1803,Stimulus,presented,0
+1804,Stimulus,presented,1
+1819,Stimulus,presented,0
+1820,Stimulus,presented,1
+1835,Stimulus,presented,0
+1837,Stimulus,presented,1
+1853,Stimulus,presented,0
+1854,Stimulus,presented,1
+1869,Stimulus,presented,0
+1871,Stimulus,presented,1
+1886,Stimulus,presented,0
+1888,Stimulus,presented,1
+1902,Stimulus,presented,0
+1904,Stimulus,presented,1
+1919,Stimulus,presented,0
+1920,Stimulus,presented,1
+1936,Stimulus,presented,0
+1938,Stimulus,presented,1
+1953,Stimulus,presented,0
+1954,Stimulus,presented,1
+1969,Stimulus,presented,0
+1971,Stimulus,presented,1
+1986,Stimulus,presented,0
+1987,Stimulus,presented,1
+2001,Stimulus,presented,0
+2003,Stimulus,presented,1
+2019,Stimulus,presented,0
+2020,Stimulus,presented,1
+2036,Stimulus,presented,0
+2037,Stimulus,presented,1
+2052,Stimulus,presented,0
+2054,Stimulus,presented,1
+2069,Stimulus,presented,0
+2071,Stimulus,presented,1
+2086,Stimulus,presented,0
+2087,Stimulus,presented,1
+2103,Stimulus,presented,0
+2105,Stimulus,presented,1
+2119,Stimulus,presented,0
+2121,Stimulus,presented,1
+2136,Stimulus,presented,0
+2137,Stimulus,presented,1
+2154,Stimulus,presented,0
+2155,Stimulus,presented,1
+2175,Stimulus,presented,0
+2176,Stimulus,presented,1
+2185,Stimulus,presented,0
+2186,Stimulus,presented,1
+2202,Stimulus,presented,0
+2203,Stimulus,presented,1
+2219,Stimulus,presented,0
+2220,Stimulus,presented,1
+2236,Stimulus,presented,0
+2237,Stimulus,presented,1
+2252,Stimulus,presented,0
+2253,Stimulus,presented,1
+2269,Stimulus,presented,0
+2270,Stimulus,presented,1
+2291,Stimulus,presented,0
+2292,Stimulus,presented,1
+2302,Stimulus,presented,0
+2303,Stimulus,presented,1
+2319,Stimulus,presented,0
+2319,stderr,received,'Traceback (most recent call last):'
+2319,stderr,received,'  File "/Users/paulm/Documents/cogsup/programming/Assignments/Week-2/Exercises/launching_function.py", line 145, in <module>'
+2320,stderr,received,'    launching_function()'
+2320,stderr,received,'  File "/Users/paulm/Documents/cogsup/programming/Assignments/Week-2/Exercises/launching_function.py", line 55, in launching_function'
+2320,stderr,received,'    control.start(subject_id=2)'
+2320,stderr,received,'  File "/Users/paulm/Documents/cogsup/programming/Assignments/.venv/lib/python3.11/site-packages/expyriment/control/_experiment_control.py", line 59, in start'
+2321,stderr,received,'    raise Exception("Experiment is already started!")'
+2321,stderr,received,'Exception: Experiment is already started!'
