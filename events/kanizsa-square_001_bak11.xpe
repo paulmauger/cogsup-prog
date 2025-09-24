@@ -1,0 +1,28 @@
+#Expyriment 1.0.0 (Python 3.11.10), .xpe-file, coding: UTF-8
+#date: Wed Sep 24 2025 17:13:40
+#sha1: edf6d9
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Darwin', node='MacBook-Pro-de-Paul.local', release='24.4.0', version='Darwin Kernel Version 24.4.0: Fri Apr 11 18:32:43 PDT 2025; root:xnu-11417.101.15~117/RELEASE_ARM64_T8103', machine='arm64')
+Time,Type,Event,Value,Detail,Detail2
+623,stdout,received,'(400.0, 300.0)'
+1212,design,log,
+#design: #exp: Square
+#design: block_cnt,block_id,trial_cnt,trial_id
+1212,design,logged,
+1212,Experiment,started
+1212,stderr,received,'Traceback (most recent call last):'
+1212,stderr,received,'  File "/Users/paulm/Documents/cogsup/programming/Assignments/Week-3/Exercises/kanizsa-square.py", line 35, in <module>'
+1212,stderr,received,'    square1.present(clear=True, update=False)'
+1212,stderr,received,'  File "/Users/paulm/Documents/cogsup/programming/Assignments/.venv/lib/python3.11/site-packages/expyriment/stimuli/_visual.py", line 1171, in present'
+1213,stderr,received,'    self.preload(inhibit_ogl_compress=True)'
+1213,stderr,received,'  File "/Users/paulm/Documents/cogsup/programming/Assignments/.venv/lib/python3.11/site-packages/expyriment/stimuli/_visual.py", line 1059, in preload'
+1213,stderr,received,'    self._get_surface(),'
+1213,stderr,received,'    ^^^^^^^^^^^^^^^^^^^'
+1213,stderr,received,'  File "/Users/paulm/Documents/cogsup/programming/Assignments/.venv/lib/python3.11/site-packages/expyriment/stimuli/_visual.py", line 490, in _get_surface'
+1213,stderr,received,'    tmp = self._create_surface()'
+1213,stderr,received,'          ^^^^^^^^^^^^^^^^^^^^^^'
+1213,stderr,received,'  File "/Users/paulm/Documents/cogsup/programming/Assignments/.venv/lib/python3.11/site-packages/expyriment/stimuli/_rectangle.py", line 237, in _create_surface'
+1213,stderr,received,'    surface = pygame.surface.Surface('
+1214,stderr,received,'              ^^^^^^^^^^^^^^^^^^^^^^^'
+1214,stderr,received,'ValueError: size needs to be (number width, number height)'

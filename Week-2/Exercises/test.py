@@ -19,7 +19,7 @@ dct2_nous = {
 print(dct2 == dct2_nous)
 
 dct3 = {
-    k:v**2 for (k,v) in dct.items() if v > 10
+    k:v**2 for (k,v) in dct.items() if "pomme" in k
 }
 
 print(dct3)

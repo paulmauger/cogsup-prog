@@ -1,0 +1,28 @@
+#Expyriment 1.0.0 (Python 3.11.10), .xpe-file, coding: UTF-8
+#date: Wed Sep 24 2025 17:13:49
+#sha1: 2867da
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Darwin', node='MacBook-Pro-de-Paul.local', release='24.4.0', version='Darwin Kernel Version 24.4.0: Fri Apr 11 18:32:43 PDT 2025; root:xnu-11417.101.15~117/RELEASE_ARM64_T8103', machine='arm64')
+Time,Type,Event,Value,Detail,Detail2
+648,stdout,received,'(400.0, 300.0)'
+717,design,log,
+#design: #exp: Square
+#design: block_cnt,block_id,trial_cnt,trial_id
+717,design,logged,
+717,Experiment,started
+717,stderr,received,'Traceback (most recent call last):'
+717,stderr,received,'  File "/Users/paulm/Documents/cogsup/programming/Assignments/Week-3/Exercises/kanizsa-square.py", line 35, in <module>'
+717,stderr,received,'    square1.present(clear=True, update=False)'
+717,stderr,received,'  File "/Users/paulm/Documents/cogsup/programming/Assignments/.venv/lib/python3.11/site-packages/expyriment/stimuli/_visual.py", line 1171, in present'
+717,stderr,received,'    self.preload(inhibit_ogl_compress=True)'
+717,stderr,received,'  File "/Users/paulm/Documents/cogsup/programming/Assignments/.venv/lib/python3.11/site-packages/expyriment/stimuli/_visual.py", line 1059, in preload'
+717,stderr,received,'    self._get_surface(),'
+717,stderr,received,'    ^^^^^^^^^^^^^^^^^^^'
+717,stderr,received,'  File "/Users/paulm/Documents/cogsup/programming/Assignments/.venv/lib/python3.11/site-packages/expyriment/stimuli/_visual.py", line 490, in _get_surface'
+717,stderr,received,'    tmp = self._create_surface()'
+717,stderr,received,'          ^^^^^^^^^^^^^^^^^^^^^^'
+717,stderr,received,'  File "/Users/paulm/Documents/cogsup/programming/Assignments/.venv/lib/python3.11/site-packages/expyriment/stimuli/_rectangle.py", line 237, in _create_surface'
+718,stderr,received,'    surface = pygame.surface.Surface('
+718,stderr,received,'              ^^^^^^^^^^^^^^^^^^^^^^^'
+718,stderr,received,'ValueError: size needs to be (number width, number height)'
