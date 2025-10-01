@@ -1,0 +1,18 @@
+#Expyriment 1.0.0 (Python 3.11.10), .xpe-file, coding: UTF-8
+#date: Wed Oct 01 2025 16:28:41
+#sha1: e259b2
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Darwin', node='MacBook-Pro-de-Paul.local', release='24.4.0', version='Darwin Kernel Version 24.4.0: Fri Apr 11 18:32:43 PDT 2025; root:xnu-11417.101.15~117/RELEASE_ARM64_T8103', machine='arm64')
+Time,Type,Event,Value,Detail,Detail2
+989,stderr,received,'Exception ignored in: <function Visual.__del__ at 0x107214fe0>'
+989,stderr,received,'Traceback (most recent call last):'
+989,stderr,received,'  File "/Users/paulm/Documents/cogsup/programming/Assignments/.venv/lib/python3.11/site-packages/expyriment/stimuli/_visual.py", line 266, in __del__'
+989,stderr,received,'    if self._compression_filename is not None:'
+989,stderr,received,'       ^^^^^^^^^^^^^^^^^^^^^^^^^^'
+989,stderr,received,"AttributeError: 'Canvas' object has no attribute '_compression_filename'"
+989,stderr,received,'Traceback (most recent call last):'
+989,stderr,received,'  File "/Users/paulm/Documents/cogsup/programming/Assignments/Week-3/Exercises/hermann-grid.py", line 24, in <module>'
+989,stderr,received,"    canvas = stimuli.Canvas(colour='white')"
+989,stderr,received,'             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'
+989,stderr,received,"TypeError: Canvas.__init__() missing 1 required positional argument: 'size'"

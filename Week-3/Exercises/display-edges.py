@@ -34,6 +34,12 @@ for x in (-w, w):
 
 -> you'll only show a quarter of the square so you have to adjust
 
+length = screen_w // 4
+radius = length // 20
+for x in (-length, length):
+    for y in (-length, length):
+        positions.append(x//2, y//2)
+
 """
 
 # Start running the experimen
