@@ -67,9 +67,12 @@ def run_trial(radius:int, color_tags:bool, ISI:int, t:int):
     while True:    
         if exp.keyboard.check(K_SPACE):
             break
-        present_for(c1, t)
-        exp.clock.wait(ISI)
-        present_for(c2, t)
+
+        for c in [c1, c2]:
+            present_for(c, t)
+            exp.screen.clear()
+            exp.screen.update()
+            exp.clock.wait(ISI)
 
 
 
