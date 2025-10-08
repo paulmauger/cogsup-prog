@@ -1,0 +1,40 @@
+#Expyriment 1.0.0 (Python 3.11.10), .xpe-file, coding: UTF-8
+#date: Thu Oct 09 2025 00:26:52
+#sha1: 5dc62e
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Darwin', node='MacBook-Pro-de-Paul.local', release='24.4.0', version='Darwin Kernel Version 24.4.0: Fri Apr 11 18:32:43 PDT 2025; root:xnu-11417.101.15~117/RELEASE_ARM64_T8103', machine='arm64')
+Time,Type,Event,Value,Detail,Detail2
+1089,design,log,
+#design: #exp: Blindspot
+#design: block_cnt,block_id,trial_cnt,trial_id
+1089,design,logged,
+1089,Experiment,started
+1096,Stimulus,presented,0
+1099,Stimulus,presented,1
+5425,Keyboard,received,32,wait
+5429,Stimulus,presented,2
+5433,Stimulus,presented,3
+5863,Keyboard,received,1073741904,wait
+5865,Stimulus,presented,4
+5866,Stimulus,presented,2
+6493,Keyboard,received,1073741903,wait
+6498,Stimulus,presented,5
+6498,Stimulus,presented,2
+7292,Keyboard,received,49,wait
+7295,Stimulus,presented,6
+7295,Stimulus,presented,2
+7467,Keyboard,received,49,wait
+7471,Stimulus,presented,7
+7471,Stimulus,presented,2
+7728,Keyboard,received,49,wait
+7730,Stimulus,presented,8
+7730,Stimulus,presented,2
+8405,Keyboard,received,50,wait
+8418,Stimulus,presented,9
+8418,Stimulus,presented,2
+8936,Keyboard,received,49,wait
+8939,Stimulus,presented,10
+8939,Stimulus,presented,2
+10021,Keyboard,received,32,wait
+10022,Experiment,ended

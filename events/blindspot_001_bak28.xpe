@@ -1,0 +1,85 @@
+#Expyriment 1.0.0 (Python 3.11.10), .xpe-file, coding: UTF-8
+#date: Thu Oct 09 2025 00:34:45
+#sha1: f311f2
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Darwin', node='MacBook-Pro-de-Paul.local', release='24.4.0', version='Darwin Kernel Version 24.4.0: Fri Apr 11 18:32:43 PDT 2025; root:xnu-11417.101.15~117/RELEASE_ARM64_T8103', machine='arm64')
+Time,Type,Event,Value,Detail,Detail2
+1922,design,log,
+#design: #exp: Blindspot
+#design: block_cnt,block_id,trial_cnt,trial_id
+1922,design,logged,
+1922,Experiment,started
+1926,Stimulus,presented,0
+1936,Stimulus,presented,1
+2628,Keyboard,received,32,wait
+2633,Stimulus,presented,2
+2636,Stimulus,presented,3
+3047,Keyboard,received,1073741903,wait
+3050,Stimulus,presented,4
+3050,Stimulus,presented,2
+3933,Keyboard,received,1073741906,wait
+3937,Stimulus,presented,5
+3937,Stimulus,presented,2
+4072,Keyboard,received,1073741906,wait
+4075,Stimulus,presented,6
+4075,Stimulus,presented,2
+4212,Keyboard,received,1073741906,wait
+4216,Stimulus,presented,7
+4216,Stimulus,presented,2
+4225,Keyboard,received,50,wait
+4227,Stimulus,presented,8
+4227,Stimulus,presented,2
+4351,Keyboard,received,1073741906,wait
+4353,Stimulus,presented,9
+4353,Stimulus,presented,2
+4403,Keyboard,received,50,wait
+4407,Stimulus,presented,10
+4407,Stimulus,presented,2
+4472,Keyboard,received,1073741906,wait
+4475,Stimulus,presented,11
+4475,Stimulus,presented,2
+4531,Keyboard,received,49,wait
+4533,Stimulus,presented,12
+4533,Stimulus,presented,2
+4629,Keyboard,received,1073741906,wait
+4631,Stimulus,presented,13
+4631,Stimulus,presented,2
+4669,Keyboard,received,49,wait
+4671,Stimulus,presented,14
+4671,Stimulus,presented,2
+4821,Keyboard,received,1073741903,wait
+4823,Stimulus,presented,15
+4824,Stimulus,presented,2
+4980,Keyboard,received,49,wait
+4983,Stimulus,presented,16
+4983,Stimulus,presented,2
+5016,Keyboard,received,1073741906,wait
+5019,Stimulus,presented,17
+5019,Stimulus,presented,2
+5192,Keyboard,received,1073741906,wait
+5195,Stimulus,presented,18
+5195,Stimulus,presented,2
+5331,Keyboard,received,50,wait
+5334,Stimulus,presented,19
+5334,Stimulus,presented,2
+5561,Keyboard,received,50,wait
+5564,Stimulus,presented,20
+5564,Stimulus,presented,2
+5571,Keyboard,received,1073741906,wait
+5573,Stimulus,presented,21
+5573,Stimulus,presented,2
+5907,Keyboard,received,1073741904,wait
+5910,Stimulus,presented,22
+5910,Stimulus,presented,2
+6142,Keyboard,received,1073741904,wait
+6144,Stimulus,presented,23
+6144,Stimulus,presented,2
+6216,Keyboard,received,1073741904,wait
+6218,Stimulus,presented,24
+6218,Stimulus,presented,2
+6392,Keyboard,received,1073741904,wait
+6394,Stimulus,presented,25
+6394,Stimulus,presented,2
+6573,Keyboard,received,32,wait
+6574,Experiment,ended

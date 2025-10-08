@@ -1,0 +1,25 @@
+#Expyriment 1.0.0 (Python 3.11.10), .xpe-file, coding: UTF-8
+#date: Thu Oct 09 2025 00:25:25
+#sha1: e20196
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Darwin', node='MacBook-Pro-de-Paul.local', release='24.4.0', version='Darwin Kernel Version 24.4.0: Fri Apr 11 18:32:43 PDT 2025; root:xnu-11417.101.15~117/RELEASE_ARM64_T8103', machine='arm64')
+Time,Type,Event,Value,Detail,Detail2
+1712,design,log,
+#design: #exp: Blindspot
+#design: block_cnt,block_id,trial_cnt,trial_id
+1712,design,logged,
+1712,Experiment,started
+1712,stderr,received,'Exception ignored in: <function Visual.__del__ at 0x106a251c0>'
+1712,stderr,received,'Traceback (most recent call last):'
+1712,stderr,received,'  File "/Users/paulm/Documents/cogsup/programming/Assignments/.venv/lib/python3.11/site-packages/expyriment/stimuli/_visual.py", line 266, in __del__'
+1712,stderr,received,'    if self._compression_filename is not None:'
+1712,stderr,received,'       ^^^^^^^^^^^^^^^^^^^^^^^^^^'
+1712,stderr,received,"AttributeError: 'TextBox' object has no attribute '_compression_filename'"
+1712,stderr,received,'Traceback (most recent call last):'
+1712,stderr,received,'  File "/Users/paulm/Documents/cogsup/programming/Assignments/Week-5/Exercises/blindspot.py", line 94, in <module>'
+1712,stderr,received,'    run_trial("R")'
+1712,stderr,received,'  File "/Users/paulm/Documents/cogsup/programming/Assignments/Week-5/Exercises/blindspot.py", line 27, in run_trial'
+1713,stderr,received,'    text1 = stimuli.TextBox(f"Close your {eye} eye and fixate the cross. Move the circle until you find the blind spot.", position=(0,50))'
+1713,stderr,received,'            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'
+1713,stderr,received,"TypeError: TextBox.__init__() missing 1 required positional argument: 'size'"

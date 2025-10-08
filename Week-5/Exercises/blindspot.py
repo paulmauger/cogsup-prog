@@ -19,21 +19,42 @@ def make_circle(r, pos=(0,0)):
     c.preload()
     return c
 
+key_names = {
+    K_DOWN:"down",
+    K_UP:"up",
+    K_LEFT:"left",
+    K_RIGHT:"right",
+    K_1:"1",
+    K_2:"2"
+}
+
 """ Experiment """
 def run_trial(side="L"):
+    exp.add_data_variable_names(["eye", "key", "radius", "xcord", "ycord"]) 
+    eye = "left" if side == "L" else "right"
+    
+    text1 = stimuli.TextBox(f"Close your {eye} eye and fixate the cross. Move the circle until you find the blind spot.", size = (300, 100), position=(0,50))
+    text2 = stimuli.TextBox("Use the arrows keys to move the circle and 1/2 to change its size. Press SPACE to start and stop.", size = (300, 100), position=(0,-50))
+    
+    text1.preload()
+    text2.preload()
+
+    text1.present(True, False)
+    text2.present(False, True)
+
+    exp.keyboard.wait(K_SPACE)
 
     pos_fix = [300, 0] if side == "L" else [-300, 0]
     fixation = stimuli.FixCross(size=(150, 150), line_width=10, position=pos_fix)
     fixation.preload()
 
-    radius = 75
-    circle = make_circle(radius)
+    size = 75
+    circle = make_circle(size)
 
     fixation.present(True, False)
     circle.present(False, True)
 
     posX, posY = 0, 0
-    size = 1
     exp.screen.clear()
 
     while True: 
@@ -41,39 +62,36 @@ def run_trial(side="L"):
         key, _ = exp.keyboard.wait(keys = [K_DOWN, K_UP, K_LEFT, K_RIGHT, K_1, K_2, K_SPACE])
 
         if key == K_DOWN:
-            posY -= 5
+            posY -= 8
         elif key == K_UP:
-            posY += 5
+            posY += 8
         elif key == K_LEFT: 
-            posX -= 5 
+            posX -= 8 
         elif key == K_RIGHT: 
-            posX += 5
+            posX += 8
         
         elif key == K_1: 
-            size = 1
+            size += 5
         elif key == K_2: 
-            size = 2
+            size -= 5
 
-        elif key == K_SPACE: 
+        elif key == K_SPACE:
+            exp.data.add([side, "space", size, posX, posY])
             break
 
-        circle = make_circle(r=size*75, pos=(posX, posY))
+        exp.data.add([side, key_names[key], size, posX, posY])
 
-        circle.present(False, False)
-        fixation.present(False, False)
+        circle = make_circle(r=size, pos=(posX, posY))
 
-        exp.screen.update()
-        exp.screen.clear()
-
-        if exp.keyboard.check(K_SPACE):
-            break
-        
+        fixation.present(True, False)
+        circle.present(False, True)
 
 
 
 
 
-        
+
+
 
 control.start(subject_id=1)
 
