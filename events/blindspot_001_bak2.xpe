@@ -1,0 +1,96 @@
+#Expyriment 1.0.0 (Python 3.11.10), .xpe-file, coding: UTF-8
+#date: Wed Oct 08 2025 17:13:28
+#sha1: f7a9c6
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Darwin', node='MacBook-Pro-de-Paul.local', release='24.4.0', version='Darwin Kernel Version 24.4.0: Fri Apr 11 18:32:43 PDT 2025; root:xnu-11417.101.15~117/RELEASE_ARM64_T8103', machine='arm64')
+Time,Type,Event,Value,Detail,Detail2
+1848,design,log,
+#design: #exp: Blindspot
+#design: block_cnt,block_id,trial_cnt,trial_id
+1848,design,logged,
+1848,Experiment,started
+1854,Stimulus,presented,0
+1863,Stimulus,presented,1
+2830,Keyboard,received,1073741904,wait
+2847,Stimulus,presented,2
+2993,Keyboard,received,1073741904,wait
+2997,Stimulus,presented,3
+3109,Keyboard,received,1073741904,wait
+3113,Stimulus,presented,4
+3397,Keyboard,received,1073741904,wait
+3414,Stimulus,presented,5
+3893,Keyboard,received,1073741904,wait
+3897,Stimulus,presented,6
+4341,Keyboard,received,1073741904,wait
+4347,Stimulus,presented,7
+4602,Keyboard,received,1073741904,wait
+4613,Stimulus,presented,8
+4826,Keyboard,received,1073741904,wait
+4830,Stimulus,presented,9
+7194,Keyboard,received,1073741906,wait
+7197,Stimulus,presented,10
+7481,Keyboard,received,1073741906,wait
+7497,Stimulus,presented,11
+7992,Keyboard,received,1073741906,wait
+7996,Stimulus,presented,12
+8117,Keyboard,received,1073741906,wait
+8130,Stimulus,presented,13
+8181,Keyboard,received,1073741905,wait
+8197,Stimulus,presented,14
+9137,Keyboard,received,1073741904,wait
+9147,Stimulus,presented,15
+10231,Keyboard,received,49,wait
+10247,Stimulus,presented,16
+10570,Keyboard,received,49,wait
+10580,Stimulus,presented,17
+10827,Keyboard,received,50,wait
+10830,Stimulus,presented,18
+11064,Keyboard,received,50,wait
+11080,Stimulus,presented,19
+11351,Keyboard,received,49,wait
+11364,Stimulus,presented,20
+11593,Keyboard,received,49,wait
+11597,Stimulus,presented,21
+11853,Keyboard,received,50,wait
+11864,Stimulus,presented,22
+13251,Keyboard,received,50,wait
+13264,Stimulus,presented,23
+13642,Keyboard,received,1073741903,wait
+13647,Stimulus,presented,24
+13945,Keyboard,received,1073741903,wait
+13947,Stimulus,presented,25
+14742,Keyboard,received,1073741903,wait
+14747,Stimulus,presented,26
+15053,Keyboard,received,1073741903,wait
+15064,Stimulus,presented,27
+15577,Keyboard,received,1073741903,wait
+15580,Stimulus,presented,28
+16368,Keyboard,received,1073741903,wait
+16380,Stimulus,presented,29
+16729,Keyboard,received,1073741903,wait
+16747,Stimulus,presented,30
+17093,Keyboard,received,1073741903,wait
+17097,Stimulus,presented,31
+19601,Keyboard,received,1073741905,wait
+19614,Stimulus,presented,32
+21734,Keyboard,received,1073741906,wait
+21747,Stimulus,presented,33
+23470,Keyboard,received,1073741905,wait
+23481,Stimulus,presented,34
+25444,Keyboard,received,1073741905,wait
+25448,Stimulus,presented,35
+29728,Keyboard,received,1073741905,wait
+29731,Stimulus,presented,36
+31803,Keyboard,received,1073741906,wait
+31815,Stimulus,presented,37
+44132,stderr,received,'Traceback (most recent call last):'
+44133,stderr,received,'  File "/Users/paulm/Documents/cogsup/programming/Assignments/Week-5/Exercises/blindspot.py", line 65, in <module>'
+44134,stderr,received,'    run_trial()'
+44134,stderr,received,'  File "/Users/paulm/Documents/cogsup/programming/Assignments/Week-5/Exercises/blindspot.py", line 39, in run_trial'
+44134,stderr,received,'    key, _ = exp.keyboard.wait(keys = [K_DOWN, K_UP, K_LEFT, K_RIGHT, K_1, K_2])'
+44134,stderr,received,'             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'
+44134,stderr,received,'  File "/Users/paulm/Documents/cogsup/programming/Assignments/.venv/lib/python3.11/site-packages/expyriment/io/_keyboard.py", line 378, in wait'
+44134,stderr,received,'    for event in pygame.event.get([pygame.KEYDOWN, pygame.KEYUP]):'
+44134,stderr,received,'                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'
+44134,stderr,received,'KeyboardInterrupt'

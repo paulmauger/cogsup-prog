@@ -1,0 +1,71 @@
+#Expyriment 1.0.0 (Python 3.11.10), .xpe-file, coding: UTF-8
+#date: Tue Oct 07 2025 01:24:44
+#sha1: a10099
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Darwin', node='MacBook-Pro-de-Paul.local', release='24.4.0', version='Darwin Kernel Version 24.4.0: Fri Apr 11 18:32:43 PDT 2025; root:xnu-11417.101.15~117/RELEASE_ARM64_T8103', machine='arm64')
+Time,Type,Event,Value,Detail,Detail2
+1062,design,log,
+#design: #exp: Ternus
+#design: block_cnt,block_id,trial_cnt,trial_id
+1062,design,logged,
+1062,Experiment,started
+1068,Stimulus,presented,0
+1068,Stimulus,presented,2
+1077,Stimulus,presented,4
+1677,Stimulus,presented,2
+1677,Stimulus,presented,4
+1694,Stimulus,presented,6
+2293,Stimulus,presented,0
+2293,Stimulus,presented,2
+2311,Stimulus,presented,4
+2911,Stimulus,presented,2
+2911,Stimulus,presented,4
+2927,Stimulus,presented,6
+3527,Stimulus,presented,0
+3527,Stimulus,presented,2
+3543,Stimulus,presented,4
+4143,Stimulus,presented,2
+4143,Stimulus,presented,4
+4160,Stimulus,presented,6
+4760,Stimulus,presented,0
+4760,Stimulus,presented,2
+4777,Stimulus,presented,4
+5377,Stimulus,presented,2
+5377,Stimulus,presented,4
+5393,Stimulus,presented,6
+5993,Stimulus,presented,0
+5993,Stimulus,presented,2
+6010,Stimulus,presented,4
+6610,Stimulus,presented,2
+6610,Stimulus,presented,4
+6627,Stimulus,presented,6
+7227,Stimulus,presented,0
+7227,Stimulus,presented,2
+7243,Stimulus,presented,4
+7843,Stimulus,presented,2
+7843,Stimulus,presented,4
+7861,Stimulus,presented,6
+8461,Stimulus,presented,0
+8461,Stimulus,presented,2
+8477,Stimulus,presented,4
+9077,Stimulus,presented,2
+9077,Stimulus,presented,4
+9094,Stimulus,presented,6
+9693,Stimulus,presented,0
+9693,Stimulus,presented,2
+9710,Stimulus,presented,4
+10310,Stimulus,presented,2
+10310,Stimulus,presented,4
+10326,Stimulus,presented,6
+10444,stderr,received,'Traceback (most recent call last):'
+10444,stderr,received,'  File "/Users/paulm/Documents/cogsup/programming/Assignments/Week-4/Exercises/testt.py", line 78, in <module>'
+10445,stderr,received,'    exp.keyboard.wait()'
+10445,stderr,received,'    ^^^^^^^^^^^^^^^^^^^^'
+10445,stderr,received,'  File "/Users/paulm/Documents/cogsup/programming/Assignments/Week-4/Exercises/testt.py", line 52, in run_trial'
+10445,stderr,received,'    present_for(c2, t=500)'
+10445,stderr,received,'  File "/Users/paulm/Documents/cogsup/programming/Assignments/Week-4/Exercises/testt.py", line 20, in present_for'
+10445,stderr,received,'    exp.clock.wait(t - dt)'
+10445,stderr,received,'  File "/Users/paulm/Documents/cogsup/programming/Assignments/.venv/lib/python3.11/site-packages/expyriment/misc/_clock.py", line 154, in wait'
+10445,stderr,received,'    pygame.event.pump()'
+10445,stderr,received,'KeyboardInterrupt'

@@ -1,0 +1,19 @@
+#Expyriment 1.0.0 (Python 3.11.10), .xpe-file, coding: UTF-8
+#date: Tue Oct 07 2025 00:19:05
+#sha1: a6e6da
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Darwin', node='MacBook-Pro-de-Paul.local', release='24.4.0', version='Darwin Kernel Version 24.4.0: Fri Apr 11 18:32:43 PDT 2025; root:xnu-11417.101.15~117/RELEASE_ARM64_T8103', machine='arm64')
+Time,Type,Event,Value,Detail,Detail2
+5482,design,log,
+#design: #exp: Ternus
+#design: block_cnt,block_id,trial_cnt,trial_id
+5482,design,logged,
+5482,Experiment,started
+5482,stderr,received,'Traceback (most recent call last):'
+5482,stderr,received,'  File "/Users/paulm/Documents/cogsup/programming/Assignments/Week-4/Exercises/test.py", line 47, in <module>'
+5482,stderr,received,'    run_trial()'
+5483,stderr,received,'  File "/Users/paulm/Documents/cogsup/programming/Assignments/Week-4/Exercises/test.py", line 25, in run_trial'
+5483,stderr,received,'    c = [make_circle(position=-200), make_circle(position=0), make_circle(position=200), make_circle(position=400)]'
+5483,stderr,received,'         ^^^^^^^^^^^^^^^^^^^^^^^^^^'
+5483,stderr,received,"TypeError: make_circle() got an unexpected keyword argument 'position'"

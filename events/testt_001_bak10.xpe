@@ -1,0 +1,75 @@
+#Expyriment 1.0.0 (Python 3.11.10), .xpe-file, coding: UTF-8
+#date: Tue Oct 07 2025 01:12:41
+#sha1: f60370
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Darwin', node='MacBook-Pro-de-Paul.local', release='24.4.0', version='Darwin Kernel Version 24.4.0: Fri Apr 11 18:32:43 PDT 2025; root:xnu-11417.101.15~117/RELEASE_ARM64_T8103', machine='arm64')
+Time,Type,Event,Value,Detail,Detail2
+1111,design,log,
+#design: #exp: Ternus
+#design: block_cnt,block_id,trial_cnt,trial_id
+1111,design,logged,
+1111,Experiment,started
+1116,Stimulus,presented,0
+1123,Stimulus,presented,4
+1616,Stimulus,presented,0
+1616,Stimulus,presented,2
+1626,Stimulus,presented,4
+1626,Stimulus,presented,2
+1642,Stimulus,presented,6
+2126,Stimulus,presented,2
+2126,Stimulus,presented,4
+2142,Stimulus,presented,6
+2142,Stimulus,presented,0
+2159,Stimulus,presented,4
+2642,Stimulus,presented,0
+2642,Stimulus,presented,2
+2659,Stimulus,presented,4
+2659,Stimulus,presented,2
+2674,Stimulus,presented,6
+3159,Stimulus,presented,2
+3159,Stimulus,presented,4
+3175,Stimulus,presented,6
+3175,Stimulus,presented,0
+3191,Stimulus,presented,4
+3676,Stimulus,presented,0
+3676,Stimulus,presented,2
+3692,Stimulus,presented,4
+3692,Stimulus,presented,2
+3708,Stimulus,presented,6
+4192,Stimulus,presented,2
+4192,Stimulus,presented,4
+4209,Stimulus,presented,6
+4209,Stimulus,presented,0
+4224,Stimulus,presented,4
+4709,Stimulus,presented,0
+4709,Stimulus,presented,2
+4726,Stimulus,presented,4
+4726,Stimulus,presented,2
+4741,Stimulus,presented,6
+5226,Stimulus,presented,2
+5226,Stimulus,presented,4
+5241,Stimulus,presented,6
+5241,Stimulus,presented,0
+5257,Stimulus,presented,4
+5742,Stimulus,presented,0
+5742,Stimulus,presented,2
+5759,Stimulus,presented,4
+5759,Stimulus,presented,2
+5773,Stimulus,presented,6
+6260,Stimulus,presented,2
+6260,Stimulus,presented,4
+6275,Stimulus,presented,6
+6275,Stimulus,presented,0
+6291,Stimulus,presented,4
+6775,Stimulus,presented,0
+6775,Stimulus,presented,2
+6793,Stimulus,presented,4
+6793,Stimulus,presented,2
+6806,Stimulus,presented,6
+7294,Stimulus,presented,2
+7294,Stimulus,presented,4
+7308,Stimulus,presented,6
+7308,Keyboard,received,32,check
+8368,Keyboard,received,32,wait
+8368,Experiment,ended

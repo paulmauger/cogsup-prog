@@ -1,0 +1,56 @@
+#Expyriment 1.0.0 (Python 3.11.10), .xpe-file, coding: UTF-8
+#date: Wed Oct 08 2025 17:14:36
+#sha1: a24717
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Darwin', node='MacBook-Pro-de-Paul.local', release='24.4.0', version='Darwin Kernel Version 24.4.0: Fri Apr 11 18:32:43 PDT 2025; root:xnu-11417.101.15~117/RELEASE_ARM64_T8103', machine='arm64')
+Time,Type,Event,Value,Detail,Detail2
+1013,design,log,
+#design: #exp: Blindspot
+#design: block_cnt,block_id,trial_cnt,trial_id
+1013,design,logged,
+1013,Experiment,started
+1017,Stimulus,presented,0
+1022,Stimulus,presented,1
+2462,Keyboard,received,1073741904,wait
+2472,Stimulus,presented,2
+2616,Keyboard,received,1073741904,wait
+2622,Stimulus,presented,3
+2795,Keyboard,received,1073741904,wait
+2805,Stimulus,presented,4
+2952,Keyboard,received,1073741904,wait
+2955,Stimulus,presented,5
+3919,Keyboard,received,1073741904,wait
+3922,Stimulus,presented,6
+4071,Keyboard,received,1073741904,wait
+4088,Stimulus,presented,7
+4222,Keyboard,received,1073741904,wait
+4238,Stimulus,presented,8
+5002,Keyboard,received,1073741904,wait
+5005,Stimulus,presented,9
+5206,Keyboard,received,1073741904,wait
+5222,Stimulus,presented,10
+5437,Keyboard,received,1073741904,wait
+5455,Stimulus,presented,11
+5635,Keyboard,received,1073741904,wait
+5638,Stimulus,presented,12
+5869,Keyboard,received,1073741904,wait
+5872,Stimulus,presented,13
+6286,Keyboard,received,1073741904,wait
+6288,Stimulus,presented,14
+6677,Keyboard,received,1073741903,wait
+6688,Stimulus,presented,15
+7160,Keyboard,received,1073741906,wait
+7172,Stimulus,presented,16
+7656,Keyboard,received,1073741905,wait
+7672,Stimulus,presented,17
+14767,stderr,received,'Traceback (most recent call last):'
+14767,stderr,received,'  File "/Users/paulm/Documents/cogsup/programming/Assignments/Week-5/Exercises/blindspot.py", line 68, in <module>'
+14768,stderr,received,'    run_trial()'
+14768,stderr,received,'  File "/Users/paulm/Documents/cogsup/programming/Assignments/Week-5/Exercises/blindspot.py", line 41, in run_trial'
+14768,stderr,received,'    key, _ = exp.keyboard.wait(keys = [K_DOWN, K_UP, K_LEFT, K_RIGHT, K_1, K_2])'
+14768,stderr,received,'             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'
+14768,stderr,received,'  File "/Users/paulm/Documents/cogsup/programming/Assignments/.venv/lib/python3.11/site-packages/expyriment/io/_keyboard.py", line 378, in wait'
+14768,stderr,received,'    for event in pygame.event.get([pygame.KEYDOWN, pygame.KEYUP]):'
+14768,stderr,received,'                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'
+14768,stderr,received,'KeyboardInterrupt'

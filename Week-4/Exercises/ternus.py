@@ -2,31 +2,8 @@ from expyriment import design, control, stimuli
 from expyriment.misc.constants import K_SPACE
 
 
-def load(stims : list[stimuli._stimulus]) -> None:
-    for stim in stims: 
-        stim.preload()
-
-
-def draw(stims : list[stimuli._stimulus]) -> float:
-    """Return the execution time to draw the stimulus"""
-
-    if stims == []:
-        return 0.
-    
-    t0 = exp.clock.time
-    for i, stim in enumerate(stims):
-        stim.present(clear=(i==0), update=(i == len(stims)-1))
-    t1 = exp.clock.time
-
-    return (t1-t0)
-
-
-def present_for(stims : list[stimuli._stimulus], t:int) -> None:
-    """Present the stimulus for a time t"""
-
-    t0 = draw(stims)
-    exp.clock.wait(t-t0)
-    exp.screen.clear()
+from utils import *
+ 
 
 colors = {
     1:"yellow",
@@ -69,7 +46,7 @@ def run_trial(radius:int, color_tags:bool, ISI:int, t:int):
             break
 
         for c in [c1, c2]:
-            present_for(c, t)
+            present_for(exp, c, t)
             exp.screen.clear()
             exp.screen.update()
             exp.clock.wait(ISI)
@@ -89,8 +66,8 @@ control.initialize(exp)
 control.start()
 
 
-run_trial(radius=30, color_tags=False, ISI=50, t=200)
-run_trial(radius=30, color_tags=False, ISI=200, t=200)
-run_trial(radius=30, color_tags=True, ISI=200, t=200)
+run_trial(radius=30, color_tags=False, ISI=50, t=200/16)
+run_trial(radius=30, color_tags=False, ISI=200, t=200/16)
+run_trial(radius=30, color_tags=True, ISI=200, t=200/16)
 
 control.end()

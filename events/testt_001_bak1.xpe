@@ -1,0 +1,28 @@
+#Expyriment 1.0.0 (Python 3.11.10), .xpe-file, coding: UTF-8
+#date: Tue Oct 07 2025 01:03:19
+#sha1: bcc156
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Darwin', node='MacBook-Pro-de-Paul.local', release='24.4.0', version='Darwin Kernel Version 24.4.0: Fri Apr 11 18:32:43 PDT 2025; root:xnu-11417.101.15~117/RELEASE_ARM64_T8103', machine='arm64')
+Time,Type,Event,Value,Detail,Detail2
+1659,design,log,
+#design: #exp: Ternus
+#design: block_cnt,block_id,trial_cnt,trial_id
+1659,design,logged,
+1659,Experiment,started
+1659,stderr,received,'Exception ignored in: <function Visual.__del__ at 0x118614fe0>'
+1659,stderr,received,'Traceback (most recent call last):'
+1659,stderr,received,'  File "/Users/paulm/Documents/cogsup/programming/Assignments/.venv/lib/python3.11/site-packages/expyriment/stimuli/_visual.py", line 266, in __del__'
+1659,stderr,received,'    if self._compression_filename is not None:'
+1660,stderr,received,'       ^^^^^^^^^^^^^^^^^^^^^^^^^^'
+1660,stderr,received,"AttributeError: 'Circle' object has no attribute '_compression_filename'"
+1660,stderr,received,'Traceback (most recent call last):'
+1660,stderr,received,'  File "/Users/paulm/Documents/cogsup/programming/Assignments/Week-4/Exercises/testt.py", line 67, in <module>'
+1660,stderr,received,'    run_trial(True)'
+1660,stderr,received,'  File "/Users/paulm/Documents/cogsup/programming/Assignments/Week-4/Exercises/testt.py", line 38, in run_trial'
+1660,stderr,received,'    c = [make_circle(position=1, color_tags=color_tags), make_circle(position=2, color_tags=color_tags), make_circle(position=3, color_tags=color_tags), make_circle(position=4, color_tags=color_tags)]'
+1660,stderr,received,'         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'
+1660,stderr,received,'  File "/Users/paulm/Documents/cogsup/programming/Assignments/Week-4/Exercises/testt.py", line 50, in make_circle'
+1660,stderr,received,'    circle = stimuli.Circle(colour = "white", position=pos, anti_aliasing=10)'
+1660,stderr,received,'             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'
+1660,stderr,received,"TypeError: Circle.__init__() missing 1 required positional argument: 'radius'"

@@ -1,0 +1,70 @@
+#Expyriment 1.0.0 (Python 3.11.10), .xpe-file, coding: UTF-8
+#date: Wed Oct 08 2025 16:56:26
+#sha1: e0236a
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Darwin', node='MacBook-Pro-de-Paul.local', release='24.4.0', version='Darwin Kernel Version 24.4.0: Fri Apr 11 18:32:43 PDT 2025; root:xnu-11417.101.15~117/RELEASE_ARM64_T8103', machine='arm64')
+Time,Type,Event,Value,Detail,Detail2
+1103,design,log,
+#design: #exp: Ternus
+#design: block_cnt,block_id,trial_cnt,trial_id
+1103,design,logged,
+1103,Experiment,started
+1107,Stimulus,presented,0
+1107,Stimulus,presented,1
+1107,Stimulus,presented,2
+1379,Stimulus,presented,3
+1379,Stimulus,presented,4
+1379,Stimulus,presented,5
+1646,Stimulus,presented,0
+1646,Stimulus,presented,1
+1646,Stimulus,presented,2
+1913,Stimulus,presented,3
+1913,Stimulus,presented,4
+1913,Stimulus,presented,5
+2180,Stimulus,presented,0
+2180,Stimulus,presented,1
+2180,Stimulus,presented,2
+2446,Stimulus,presented,3
+2446,Stimulus,presented,4
+2446,Stimulus,presented,5
+2716,Keyboard,received,32,check
+2719,Stimulus,presented,6
+2719,Stimulus,presented,7
+2719,Stimulus,presented,8
+3130,Stimulus,presented,9
+3130,Stimulus,presented,10
+3130,Stimulus,presented,11
+3546,Stimulus,presented,6
+3546,Stimulus,presented,7
+3546,Stimulus,presented,8
+3963,Stimulus,presented,9
+3963,Stimulus,presented,10
+3963,Stimulus,presented,11
+4380,Stimulus,presented,6
+4380,Stimulus,presented,7
+4380,Stimulus,presented,8
+4796,Stimulus,presented,9
+4796,Stimulus,presented,10
+4796,Stimulus,presented,11
+5213,Keyboard,received,32,check
+5217,Stimulus,presented,12
+5217,Stimulus,presented,14
+5217,Stimulus,presented,16
+5630,Stimulus,presented,18
+5630,Stimulus,presented,20
+5630,Stimulus,presented,22
+6046,Stimulus,presented,12
+6046,Stimulus,presented,14
+6046,Stimulus,presented,16
+6463,Stimulus,presented,18
+6463,Stimulus,presented,20
+6463,Stimulus,presented,22
+6880,Stimulus,presented,12
+6880,Stimulus,presented,14
+6880,Stimulus,presented,16
+7296,Stimulus,presented,18
+7296,Stimulus,presented,20
+7296,Stimulus,presented,22
+7713,Keyboard,received,32,check
+7714,Experiment,ended
