@@ -1,0 +1,26 @@
+#Expyriment 1.0.0 (Python 3.11.10), .xpe-file, coding: UTF-8
+#date: Sun Nov 02 2025 21:52:35
+#sha1: a27abe
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Darwin', node='MacBook-Pro-de-Paul.local', release='24.4.0', version='Darwin Kernel Version 24.4.0: Fri Apr 11 18:32:43 PDT 2025; root:xnu-11417.101.15~117/RELEASE_ARM64_T8103', machine='arm64')
+Time,Type,Event,Value,Detail,Detail2
+1123,design,log,
+#design: #exp: Stroop Balanced
+#design: #dvn: block_cnt,trial_cnt,trial_type,word,color,RT,correct
+#design: block_cnt,block_id,trial_cnt,trial_id
+1123,design,logged,
+1123,Experiment,started
+1139,Stimulus,presented,19
+1551,Keyboard,received,32,wait
+1552,Stimulus,presented,0
+2056,Stimulus,presented,11
+3990,Keyboard,received,103,wait
+3990,stderr,received,'Traceback (most recent call last):'
+3990,stderr,received,'  File "/Users/paulm/Documents/cogsup/programming/Assignments/Week-6/Exercises/stroop_balanced.py", line 131, in <module>'
+3990,stderr,received,'    run_trial(**trial) '
+3990,stderr,received,'    ^^^^^^^^^^^^^^^^^^'
+3990,stderr,received,'  File "/Users/paulm/Documents/cogsup/programming/Assignments/Week-6/Exercises/stroop_balanced.py", line 96, in run_trial'
+3990,stderr,received,'    correct = key == COLOR_KEY_MAP[color]'
+3990,stderr,received,'                     ~~~~~~~~~~~~~^^^^^^^'
+3990,stderr,received,"TypeError: 'zip' object is not subscriptable"

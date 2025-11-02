@@ -1,0 +1,94 @@
+#Expyriment 1.0.0 (Python 3.11.10), .xpe-file, coding: UTF-8
+#date: Sat Nov 01 2025 16:22:45
+#sha1: 199447
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Darwin', node='MacBook-Pro-de-Paul.local', release='24.4.0', version='Darwin Kernel Version 24.4.0: Fri Apr 11 18:32:43 PDT 2025; root:xnu-11417.101.15~117/RELEASE_ARM64_T8103', machine='arm64')
+Time,Type,Event,Value,Detail,Detail2
+1741,design,log,
+#design: #exp: Stroop Balanced
+#design: #dvn: block_cnt,trial_cnt,trial_type,word,color,RT,correct
+#design: block_cnt,block_id,trial_cnt,trial_id
+1741,design,logged,
+1741,Experiment,started
+1751,Stimulus,presented,19
+3724,Keyboard,received,32,wait
+3725,Stimulus,presented,0
+4235,Stimulus,presented,4
+5834,Keyboard,received,111,wait
+5835,Stimulus,presented,17
+6834,Stimulus,presented,0
+7352,Stimulus,presented,2
+11080,Keyboard,received,98,wait
+11080,Stimulus,presented,17
+12081,Stimulus,presented,0
+12585,Stimulus,presented,1
+13814,Keyboard,received,114,wait
+13814,Stimulus,presented,17
+14814,Stimulus,presented,0
+15318,Stimulus,presented,6
+16630,Keyboard,received,98,wait
+16631,Stimulus,presented,17
+17630,Stimulus,presented,0
+18135,Stimulus,presented,12
+21507,Keyboard,received,111,wait
+21507,Stimulus,presented,17
+22507,Stimulus,presented,0
+23020,Stimulus,presented,6
+23713,Keyboard,received,98,wait
+23714,Stimulus,presented,17
+24714,Stimulus,presented,0
+25220,Stimulus,presented,7
+26337,Keyboard,received,103,wait
+26338,Stimulus,presented,17
+27338,Stimulus,presented,0
+27853,Stimulus,presented,15
+29345,Keyboard,received,103,wait
+29345,Stimulus,presented,17
+30345,Stimulus,presented,0
+30852,Stimulus,presented,11
+31753,Keyboard,received,103,wait
+31754,Stimulus,presented,17
+32753,Stimulus,presented,0
+33269,Stimulus,presented,8
+35038,Keyboard,received,111,wait
+35039,Stimulus,presented,17
+36038,Stimulus,presented,0
+36553,Stimulus,presented,9
+37399,Keyboard,received,114,wait
+37399,Stimulus,presented,17
+38399,Stimulus,presented,0
+38902,Stimulus,presented,10
+39965,Keyboard,received,98,wait
+39965,Stimulus,presented,17
+40966,Stimulus,presented,0
+41469,Stimulus,presented,14
+42396,Keyboard,received,98,wait
+42396,Stimulus,presented,17
+43397,Stimulus,presented,0
+43903,Stimulus,presented,2
+44667,Keyboard,received,98,wait
+44667,Stimulus,presented,17
+45667,Stimulus,presented,0
+46169,Stimulus,presented,12
+46532,Keyboard,received,111,wait
+46532,Stimulus,presented,17
+47532,Stimulus,presented,0
+48036,Stimulus,presented,8
+49075,Keyboard,received,111,wait
+49075,Stimulus,presented,17
+50086,Stimulus,presented,20
+684854,Keyboard,received,1073742051,wait
+684878,Stimulus,presented,0
+685365,Stimulus,presented,1
+689194,stderr,received,'Traceback (most recent call last):'
+689195,stderr,received,'  File "/Users/paulm/Documents/cogsup/programming/Assignments/Week-6/Exercises/stroop_balanced.py", line 111, in <module>'
+689196,stderr,received,'    run_trial(block_id, trial_id_in_block, trial_info)'
+689198,stderr,received,'  File "/Users/paulm/Documents/cogsup/programming/Assignments/Week-6/Exercises/stroop_balanced.py", line 98, in run_trial'
+689198,stderr,received,'    key, rt = exp.keyboard.wait(KEYS)'
+689198,stderr,received,'              ^^^^^^^^^^^^^^^^^^^^^^^'
+689198,stderr,received,'  File "/Users/paulm/Documents/cogsup/programming/Assignments/.venv/lib/python3.11/site-packages/expyriment/io/_keyboard.py", line 378, in wait'
+689198,stderr,received,'    for event in pygame.event.get([pygame.KEYDOWN, pygame.KEYUP]):'
+689199,stderr,received,'                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'
+689199,stderr,received,'KeyboardInterrupt'
+689204,Data,saved

@@ -1,0 +1,28 @@
+#Expyriment 1.0.0 (Python 3.11.10), .xpe-file, coding: UTF-8
+#date: Sun Nov 02 2025 22:03:00
+#sha1: c943fa
+#modules: 
+#display: size=(800, 600), window_mode=True, opengl=2
+#os: uname_result(system='Darwin', node='MacBook-Pro-de-Paul.local', release='24.4.0', version='Darwin Kernel Version 24.4.0: Fri Apr 11 18:32:43 PDT 2025; root:xnu-11417.101.15~117/RELEASE_ARM64_T8103', machine='arm64')
+Time,Type,Event,Value,Detail,Detail2
+1663,design,log,
+#design: #exp: Stroop Balanced
+#design: #dvn: block_cnt,trial_cnt,trial_type,word,color,RT,correct
+#design: block_cnt,block_id,trial_cnt,trial_id
+1663,design,logged,
+1663,Experiment,started
+1668,Stimulus,presented,19
+2106,Keyboard,received,32,wait
+2106,Stimulus,presented,0
+2618,Stimulus,presented,5
+5922,stderr,received,'Traceback (most recent call last):'
+5922,stderr,received,'  File "/Users/paulm/Documents/cogsup/programming/Assignments/Week-6/Exercises/stroop_balanced.py", line 131, in <module>'
+5922,stderr,received,'    run_trial(**trial) '
+5922,stderr,received,'    ^^^^^^^^^^^^^^^^^^'
+5922,stderr,received,'  File "/Users/paulm/Documents/cogsup/programming/Assignments/Week-6/Exercises/stroop_balanced.py", line 95, in run_trial'
+5922,stderr,received,'    key, rt = exp.keyboard.wait(KEYS)'
+5922,stderr,received,'              ^^^^^^^^^^^^^^^^^^^^^^^'
+5922,stderr,received,'  File "/Users/paulm/Documents/cogsup/programming/Assignments/.venv/lib/python3.11/site-packages/expyriment/io/_keyboard.py", line 378, in wait'
+5922,stderr,received,'    for event in pygame.event.get([pygame.KEYDOWN, pygame.KEYUP]):'
+5922,stderr,received,'                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^'
+5922,stderr,received,'KeyboardInterrupt'
