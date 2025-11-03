@@ -37,7 +37,7 @@ Press SPACE to continue.
 INSTR_MID = """You have finished half of the experiment, well done! Your task will be the same.\nTake a break then press SPACE to move on to the second half."""
 INSTR_END = """Well done!\nPress SPACE to quit the experiment."""
 
-FEEDBACK_CORRECT = """O"""
+FEEDBACK_CORRECT = ""
 FEEDBACK_INCORRECT = """X"""
 
 """ Helper functions """
