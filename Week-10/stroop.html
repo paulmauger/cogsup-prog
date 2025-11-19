@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My experiment</title>
+    <script src="https://unpkg.com/jspsych@8.0.2"></script>
+    <script src="https://unpkg.com/@jspsych/plugin-html-keyboard-response@2.0.0"></script>
+    <link href="https://unpkg.com/jspsych@8.0.2/css/jspsych.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body></body>
+
+  <script type="text/javascript">
+    const NUMBER_OF_TRIALS_PER_KEY = 10;
+    const COLORS = ['red', 'blue', 'green', 'yellow'];
+    const KEYS = ['F', 'J'];
+    const BLANK_DURATION = 50 // ms;
+    const CROSS_DURATION = 1000 // ms;
+
+    function createStroopTrial(targetKey, keys, blankDuration, crossDuration, text, color){
+        let printedText =`<p style='color: ${color}'>${text}</p>`;
+
+        let fixationCrossTrial = {
+        type: jsPsychHtmlKeyboardResponse,
+        stimulus:"+",
+        choices: "NO_KEYS", 
+        trial_duration:crossDuration
+      }
+
+      let blankTrial = {
+        type: jsPsychHtmlKeyboardResponse,
+        stimulus: "",
+        trial_duration: blankDuration,
+        choices: "NO_KEYS",
+      };
+
+      let stimulusDisplayTrial = {
+        type: jsPsychHtmlKeyboardResponse,
+        stimulus: printedText,
+        choices: keys,
+      }
+
+      return {
+        timeline:  [fixationCrossTrial, stimulusDisplayTrial, blankTrial]
+      }
+    }
+
+    function createShuffledListOfConditions(){
+    var factors = {
+        color: ['red', 'blue', 'green', 'yellow'],
+        text: ['red', 'blue', 'green', 'yellow']
+    };
+      return jsPsych.randomization.factorial(factors, 1);
+    }
+
+    function createShuffledListOfTrials(keys, trialsPerKey, blankDuration, crossDuration){
+      let possibleTrials = [];
+      let conditions = createShuffledListOfConditions();
+
+      for (let k = 0; k < conditions.length; k += 1){
+        let color = conditions[k].color;
+        let text = conditions[k].text;
+        let targetKey = (color === text) ? "J" : "F";
+        possibleTrials.push(createStroopTrial(targetKey, keys, blankDuration, crossDuration, text, color));
+      }
+
+      return possibleTrials;
+    }
+
+  </script>
+
+  <script type="text/javascript">
+    const jsPsych = initJsPsych({
+      on_finish: function(){
+        jsPsych.data.get().localSave("csv", "demo_jspsych_results.csv");
+        document.body.innerHTML = "Thank you!";
+      }
+    });
+
+    const helloTrial = {
+      type: jsPsychHtmlKeyboardResponse,
+      stimulus: `
+        <p>Hello!</p>
+        <p>You will be taking part in a toy experiment.
+          You will see one of two letters displayed on the screen (${KEYS[0]} or ${KEYS[1]}).</p>
+        <p> Your role will be to press the key corresponding to the letter.
+          <b>Please answer as fast as you can!</b></p>
+        <p>Press any key to continue.</p>
+        `
+    };
+
+    let trials = createShuffledListOfTrials(KEYS, NUMBER_OF_TRIALS_PER_KEY, BLANK_DURATION, CROSS_DURATION);
+
+    let timeline = [helloTrial];
+
+    // Because we nested blank screen after the trial, even after order randomiztion the two will be in succession.
+    for (let trial of trials){
+      timeline.push(trial);
+    }
+
+    jsPsych.run(timeline);
+  </script>
+</html>
